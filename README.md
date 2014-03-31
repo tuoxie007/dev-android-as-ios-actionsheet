@@ -6,7 +6,7 @@ dev-android-as-ios-actionsheet
 
 	List<ActionSheetItem> items = new ArrayList<ActionSheetItem>();
 	items.add(new ActionSheetItem(getString(R.string.confirm_delete),
-		new ActionSheet.ActionSheetItemOnClickListener() {
+		new ActionSheetItem.ActionSheetItemOnClickListener() {
 			@Override
 			public void onClick() {
 				selectPhoto();
