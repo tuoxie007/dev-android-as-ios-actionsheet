@@ -11,21 +11,6 @@ import java.util.List;
  */
 public class ActionSheet {
 
-    public static class ActionSheetItem {
-
-        private String title;
-        private ActionSheetItemOnClickListener itemOnClickListener;
-
-        public ActionSheetItem(String title, ActionSheetItemOnClickListener itemOnClickListener) {
-            this.title = title;
-            this.itemOnClickListener = itemOnClickListener;
-        }
-    }
-
-    public static interface ActionSheetItemOnClickListener {
-        public void onClick();
-    }
-
     public static void showWithItems(Context ctx, final List<ActionSheetItem> items) {
         AlertDialog.Builder menuDialog = new AlertDialog.Builder(ctx);
         String[] titles = new String[items.size()];
@@ -40,4 +25,9 @@ public class ActionSheet {
         });
         menuDialog.show();
     }
+
+    public interface ActionSheetItemOnClickListener {
+        public void onClick();
+    }
 }
+
