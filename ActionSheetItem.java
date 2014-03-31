@@ -12,4 +12,8 @@ public class ActionSheetItem {
         this.title = title;
         this.itemOnClickListener = itemOnClickListener;
     }
+
+    public interface ActionSheetItemOnClickListener {
+        public void onClick();
+    }
 }

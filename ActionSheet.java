@@ -25,9 +25,5 @@ public class ActionSheet {
         });
         menuDialog.show();
     }
-
-    public interface ActionSheetItemOnClickListener {
-        public void onClick();
-    }
 }
 
